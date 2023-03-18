@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+  font-size: 18px ;
+  background-color: rgb(253, 253, 253);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+ margin-bottom: 40px;
+ margin-top: 20;
+ max-width: 940px;
+ font-size: 2.5em;
+ font-family: Lato, sans-serif;
+ font-weight: 700;
+ line-height: 1.1;          /*Dimension de la linea*/
+ margin: 40px, 0;          /*Primero arriba y abajo, segundo laterales*/
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+min-height: 100vh;         /*esto hara que la app coja el 100% de la pantalla verticalmente*/
+display: flex;
+flex-wrap: wrap;           /*para cuando un item ocupe toda la linea , el siguiente baje abajo*/
+align-items: center;       /* items alineados en el centroo horizontalmente*/
+justify-content: center;   /* items alineados en el centroo verticalmente*/
+text-align: center;
+}
+
+.contenedor-principal{
+  min-height: 600px;      /*Al usar altura minima se adaptara o estirara a las necesidades*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;           
+  align-items: center;       
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
